@@ -216,10 +216,10 @@ header .navbar ul li a:hover {
   margin-left: 6rem;
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  
+  cursor: pointer;
 }
 .home .image img:hover {
-  
+ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 .home .content h2 {
   font-size: 5rem;
