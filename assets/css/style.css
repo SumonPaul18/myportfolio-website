@@ -94,6 +94,7 @@ header .logo {
 }
 header .logo img {
   font-size: 2.2rem;
+  float: center;
 }
 header .logo:hover {
   color: #fc8c05;
