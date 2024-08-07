@@ -94,9 +94,6 @@ header .logo {
 }
 header .logo img {
   font-size: 2.2rem;
-  width: 250px;
-  height: 80px;
-  float: center;
 }
 header .logo:hover {
   color: #fc8c05;
