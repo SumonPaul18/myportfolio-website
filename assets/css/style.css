@@ -91,6 +91,7 @@ header .logo {
   font-weight: 800;
   text-decoration: none;
   color: #0e2431;
+  float: center;
 }
 header .logo img {
   font-size: 2.2rem;
