@@ -3,6 +3,28 @@ Portfolio website build using HTML5, CSS3, JavaScript and jQuery.
 
 <a href="https://skpaul.netlify.app/" target="_blank">**Visit Now** 🚀</a>
 
+# How to Deploy myportfolio on Kubernetes
+
+~~~
+rm -rf skpaul.info
+git clone https://github.com/SumonPaul18/skpaul.info.git
+cd skpaul.info
+kubectl apply -f skpaul-info-deploy.yaml
+kubectl get deploy,pv,pvc,pod,svc
+~~~
+
+### Access The Nginx Instance
+~~~
+kubectl get pod
+~~~
+#### Delete all to Nginx-Deploy
+~~~
+kubectl delete deploy skpaul-deployment
+kubectl delete pvc skpaul-nfs-pvc
+kubectl delete pv skpaul-nfs-pv
+kubectl delete svc skpaul-svc
+~~~
+#
 
 ## 📌 Tech Stack
 [![HTML](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)](https://github.com/jigar-sable/Portfolio-Website/search?l=html)&nbsp;
