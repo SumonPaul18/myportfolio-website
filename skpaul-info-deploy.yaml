@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: nginx-nfs-pv
+  name: skpaul-nfs-pv
 spec:
-  storageClassName: nginx-nfs-sc
+  storageClassName: skpaul-nfs-sc
   capacity:
     storage: 10Gi
   volumeMode: Filesystem
@@ -14,15 +14,15 @@ spec:
     - hard
     - nfsvers=4.1
   nfs:
-    path: /nfs-share/kubernetes/k8s-nginx-nfs
+    path: /nfs-share/kubernetes/skpaul.info
     server: 192.168.0.96
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: nginx-nfs-pvc
+  name: skpaul-nfs-pvc
 spec:
-  storageClassName: nginx-nfs-sc
+  storageClassName: skpaul-nfs-sc
   accessModes:
     - ReadWriteMany
   resources:
@@ -32,14 +32,14 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: skpaul-deployment
   labels:
-    app: nginx
+    app: skpaul.info
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nginx
+      app: skpaul.info
   template:
     metadata:
       labels:
@@ -51,20 +51,20 @@ spec:
         ports:
         - containerPort: 80
         volumeMounts:
-        - name: nginx-nfs-volume
+        - name: skpaul-nfs-volume
           mountPath: /usr/share/nginx/html/
       volumes:
-      - name: nginx-nfs-volume
+      - name: skpaul-nfs-volume
         persistentVolumeClaim:
-          claimName: nginx-nfs-pvc
+          claimName: skpaul-nfs-pvc
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: nginx-svc
+  name: skpaul-svc
 spec:
   selector:
-    app: nginx
+    app: skpaul.info
   ports:
   - protocol: "TCP"
     port: 6000
