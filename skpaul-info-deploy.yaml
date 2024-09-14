@@ -43,7 +43,7 @@ spec:
   template:
     metadata:
       labels:
-        app: nginx
+        app: skpaul.info
     spec:
       containers:
       - name: nginx
