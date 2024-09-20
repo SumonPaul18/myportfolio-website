@@ -70,13 +70,13 @@
     }
   },
   {
-    "name": "React-Projects",
-    "desc": "Full-Stack project dashboard which is collection of projects built on the React library.",
-    "image": "reactprojects",
-    "category": "mern",
+    "name": "OpenStack Cloud",
+    "desc": "Build a Private Cloud Using OpenStack.",
+    "image": "InstallOpenStack",
+    "category": "cloud",
     "links": {
-      "view": "https://reactjsprojects.herokuapp.com/",
-      "code": "https://github.com/jigar-sable/React-Projects"
+      "view": "https:cloud.paulco.xyz/",
+      "code": "https://github.com/SumonPaul18/build-openstack-packstack-almalinux9"
     }
   },
   {
