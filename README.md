@@ -37,8 +37,8 @@ Particle.js, Typed.js, Tilt.js, Scroll Reveal, Tawk.to, Font Awesome and JSON
 
 ## 📌 How Looks Like This Portfolio 🙈 :
 ![hero-section](https://github.com/SumonPaul18/skpaul.info/blob/main/assets/images/hero-section.png?raw=true)
+![about-section](https://raw.githubusercontent.com/SumonPaul18/skpaul.info/refs/heads/main/assets/images/about-section.png)
 ![skils-ection](https://github.com/SumonPaul18/skpaul.info/blob/main/assets/images/skill-section.png?raw=true)
-
 
 <h2>📬 Contact</h2>
 
