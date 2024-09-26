@@ -40,7 +40,7 @@
     }
   },
   {
-    "name": "SSH Ternimal",
+    "name": "Web Based SSH Terminal",
     "desc": "Build Web Based SSH Ternimal using python flask paramiko",
     "image": "sshterminal",
     "category": "mern",
@@ -51,11 +51,11 @@
   },
   {
     "name": "Blog Site Flask",
-    "desc": "Build Lite-weight Blog Site Using Python Flash.",
+    "desc": "Build Lite-weight Blog Site Using Python Flash and others python libraries.",
     "image": "flaskblog",
     "category": "flask",
     "links": {
-      "view": "https://blog.iotloy.xyz",
+      "view": "https://blog.iotlogy.xyz",
       "code": "https://github.com/SumonPaul18/paulco-bloging"
     }
   },
